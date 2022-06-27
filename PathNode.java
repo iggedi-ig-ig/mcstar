@@ -44,7 +44,7 @@ public class PathNode {
     private float gScore = Float.POSITIVE_INFINITY;
     private float hScore = Float.POSITIVE_INFINITY;
 
-    public boolean isAccessible(WorldClient theWorld) {
+    public boolean isAccessible(final WorldClient theWorld) {
         final BlockPos lower = new BlockPos(this.posX, this.posY, this.posZ);
         final BlockPos upper = lower.add(0, 1, 0);
         final BlockPos below = lower.add(0, -1, 0);
